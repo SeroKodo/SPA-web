@@ -1,0 +1,26 @@
+#bigSquare {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .smallSquare {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .lightYellow {
+    background-color: lightyellow;
+  }
+  
+  .lightGreen {
+    background-color: lightgreen;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
