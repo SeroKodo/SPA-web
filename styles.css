@@ -1,26 +1,37 @@
-#bigSquare {
-    width: 200px;
-    height: 200px;
-    background-color: gray;
-    margin-bottom: 20px;
-  }
-  
-  .smallSquare {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .lightYellow {
-    background-color: lightyellow;
-  }
-  
-  .lightGreen {
-    background-color: lightgreen;
-  }
-  
-  .purple {
-    background-color: purple;
-  }
+ody, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+#main-square {
+  width: 150px;
+  height: 150px;
+  background-color: #767676; 
+  margin-bottom: 20px;
+}
+
+#color-selectors {
+  display: flex;
+}
+
+.color-selector {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.color-selector:hover {
+  transform: translateY(-5px);
+}
+
+.color-selector[data-color="yellow"] { background-color: #FFFF00; }
+.color-selector[data-color="lightgreen"] { background-color: #90EE90; }
+.color-selector[data-color="lightpurple"] { background-color: #D8BFD8; }
